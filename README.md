@@ -1,1 +1,0 @@
-https://l1irik-rbk.github.io/rsschool-cv/cv
