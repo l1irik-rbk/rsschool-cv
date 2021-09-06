@@ -1,0 +1,316 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #FCCB4A;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333
+}
+
+section {
+  margin-bottom: 33px;
+}
+
+
+
+.subtitle{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #6D7081;
+  padding-bottom: 8px;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+
+.container {
+  max-width: 1266px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.menu{
+  background-color: #e9e7e7;
+  padding: 20px 10px;
+}
+
+.menu__list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__list a{
+  border-bottom: 1px solid #e9e7e7;
+  transition: all .5s;
+  text-transform: uppercase;
+}
+
+.menu__list a:hover{
+  border-bottom: 1px solid #333333;
+}
+
+.my-cv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside{
+  background-color: #FAFAFA;
+  padding: 0 10px;
+  max-width: 404px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__photo{
+  width: 182px;
+  height: 182px;
+  margin: 64px auto;
+  border-radius: 50%;
+  
+}
+
+.contacts{
+  padding: 0 40px;
+}
+
+.contacts__list span{
+  font-weight: 700;
+}
+.contacts__list li{
+  margin-bottom: 5px;
+}
+
+.contacts__list a{
+  border-bottom: 1px solid #FAFAFA;
+  padding-bottom: 2px;
+  transition: all .5s;
+}
+
+.contacts__list a:hover{
+  border-bottom: 1px solid #6D7081;
+}
+
+.main-title{
+  margin: 0;
+}
+
+.main-page{
+  padding-left: 10px;
+  margin: 0 auto;
+  padding-right: 10px;
+}
+
+.main-page li::before{
+  content: '-';
+}
+
+.title{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  margin: 0;
+  padding-top: 103px;
+  
+}
+
+.code__example{
+  padding: 20px 20px;
+  display: block;
+}
+
+.role{
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+.footer{
+  background-color: #e9e7e7;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer__logo{
+  width: 100px;
+}
+
+.footer__git-link,
+.footer__logo-link{
+  border-bottom: 1px solid #e9e7e7;
+  transition: all .5s;
+}
+
+.footer__git-link:hover,
+.footer__logo-link:hover{
+  border-bottom: 1px solid #333333;
+}
+
+.media__title,
+.media__roll{
+  display: none;
+}
+
+
+@media (max-width: 1266px) {
+  .container{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .media__title,
+  .media__roll{
+    display: block;
+  }
+
+  .media__none{
+    display: none;
+  }
+
+  .my-cv{
+    display: block;
+    text-align: center;
+  }
+
+  .aside{
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .title,
+  .role{
+    padding: 0;
+  }
+
+  .aside__photo {
+    margin: 40px 10px;
+  }
+
+  .contacts {
+    padding: 0 20px;
+  }
+
+  .about-me,
+  .skills{
+    margin-bottom: 0;
+  }
+
+  .skills__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .about-me p:last-child,
+  .skills__list{
+    padding-bottom: 30px;
+  }
+
+  .main-page li::before {
+    content: '';
+  }
+}
+
+@media (max-width: 920px) {
+  .aside{
+    flex-wrap: wrap;
+  }
+
+  .contacts{
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .menu__list{
+    display: block;
+    text-align: center;
+  }
+
+  .menu__list a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .aside{
+    display: block;
+    width: 100%;
+  }
+  
+  .menu{
+    padding-bottom: 10px;
+  }
+
+  .role{
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 41px
+  }
+
+  .title{
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .subtitle{
+    font-size: 23px;
+    line-height: 24px;
+  }
+  .contacts{
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer{
+    display: block;
+    text-align: center;
+  }
+
+  .footer__git-link{
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  
+  .footer p{
+    margin-bottom: 20px;
+  }
+}
