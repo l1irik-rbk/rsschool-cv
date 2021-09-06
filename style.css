@@ -176,3 +176,141 @@ section {
   border-bottom: 1px solid #333333;
 }
 
+.media__title,
+.media__roll{
+  display: none;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .media__title,
+  .media__roll{
+    display: block;
+  }
+
+  .media__none{
+    display: none;
+  }
+
+  .container{
+    margin: 0 auto;
+  }
+
+  .my-cv{
+    display: block;
+    text-align: center;
+  }
+
+  .aside{
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .title,
+  .role{
+    padding: 0;
+  }
+
+  .aside__photo {
+    margin: 40px 10px;
+  }
+
+  .contacts {
+    padding: 0 20px;
+  }
+
+  .about-me,
+  .skills{
+    margin-bottom: 0;
+  }
+
+  .skills__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .about-me p:last-child,
+  .skills__list{
+    padding-bottom: 30px;
+  }
+
+  .main-page li::before {
+    content: '';
+  }
+}
+
+@media (max-width: 920px) {
+  .aside{
+    flex-wrap: wrap;
+  }
+
+  .contacts{
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .menu__list{
+    display: block;
+    text-align: center;
+  }
+
+  .menu__list a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .aside{
+    display: block;
+    width: 100%;
+  }
+  
+  .menu{
+    padding-bottom: 10px;
+  }
+
+  .role{
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 41px
+  }
+
+  .title{
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .subtitle{
+    font-size: 23px;
+    line-height: 24px;
+  }
+  .contacts{
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer{
+    display: block;
+    text-align: center;
+  }
+
+  .footer__git-link{
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  
+  .footer p{
+    margin-bottom: 20px;
+  }
+}
