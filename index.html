@@ -5,22 +5,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="atom-one-dark.min.css">
   <title>My CV</title>
 </head>
 
 <body>
   <div class="container">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#info">INFO</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#skills">SKILLS</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#code">CODE EXAMPLE</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#experience">EXPERIENCE</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#education">EDUCATION</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="#lang">LANGUAGES</a>
+        </li>
+      </ul>
+    </nav>
     <main class="my-cv">
       <aside class="aside">
-        <img class="aside__phooto" src="images/me.jpg" alt="Me">
+        <img class="aside__photo" src="images/me.jpg" alt="Me">
         <div class="contacts">
-          <h3 class="contacts__title subtitle">
-            Info
+          <h3 class="subtitle">
+            contacts
           </h3>
           <ul class="contacts__list">
-            <li class="contacts__list-item"><a href="mailto:kir.baranow2010@gmail.com">Email: kir.baranow2010@gmail.com</a></li>
-            <li class="contacts__list-item">>Discord: L1irik #0163</li>
-            <li class="contacts__list-item"><a href="https://t.me/l1irik777">Telegram: @l1irik777</a></li>
+            <li class="contacts__list-item"><span>Email: </span><a
+                href="mailto:kir.baranow2010@gmail.com">kir.baranow2010@gmail.com</a></li>
+            <li class="contacts__list-item"><span>Discord: </span>L1irik #0163</li>
+            <li class="contacts__list-item"><span>Telegram: </span><a href="https://t.me/l1irik777">@l1irik777</a></li>
           </ul>
         </div>
       </aside>
@@ -29,10 +57,11 @@
           <h1 class="title">
             Kirill Baranov
           </h1>
+          <h2 class="role">(Job role)</h2>
         </section>
-        <section class="about-me">
-          <h3 class="contacts__title subtitle">
-            Info
+        <section class="about-me" id="info">
+          <h3 class="subtitle">
+            Info about me
           </h3>
           <p class="about-me__text">
             I want to be a web-developer.
@@ -41,8 +70,8 @@
             I study HTML, CSS, JS at least 4-5 hours a day and I will not stop studying until I find a job.
           </p>
         </section>
-        <section class="skills">
-          <h3 class="skills__title subtitle">
+        <section class="skills" id="skills">
+          <h3 class="subtitle">
             Skills
           </h3>
           <ul class="skills__list">
@@ -54,12 +83,13 @@
           </ul>
         </section>
         <section class="code">
-          <h3 class="code__title subtitle">
+          <h3 class="subtitle" id="code">
             Code example
           </h3>
+          <pre><code class="code__example">const sum = (numbers) => numbers.reduce((a, b) => a + b, 0);</code></pre>
         </section>
-        <section class="experience">
-          <h3 class="code__title subtitle">
+        <section class="experience" id="experience">
+          <h3 class="subtitle">
             Experience
           </h3>
           <p class="experience__text">
@@ -67,15 +97,15 @@
           </p>
         </section>
         <section class="education">
-          <h3 class="education__title subtitle">
+          <h3 class="subtitle">
             Education
           </h3>
-          <p class="education__text">
-            No experience
+          <p class="education__text" id="education">
+            University: RGATU, Engineer constructor
           </p>
         </section>
-        <section class="languages">
-          <h3 class="languages__title subtitle">
+        <section class="languages" id="lang">
+          <h3 class="subtitle">
             Languages
           </h3>
           <ul class="languages__list">
@@ -97,6 +127,8 @@
       </a>
     </footer>
   </div>
+  <script src="highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 
 </html>
