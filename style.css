@@ -182,7 +182,11 @@ section {
 }
 
 
-
+@media (max-width: 1266px) {
+  .container{
+    margin: 0 auto;
+  }
+}
 
 @media (max-width: 1200px) {
   .media__title,
@@ -192,10 +196,6 @@ section {
 
   .media__none{
     display: none;
-  }
-
-  .container{
-    margin: 0 auto;
   }
 
   .my-cv{
