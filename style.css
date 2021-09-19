@@ -34,8 +34,6 @@ section {
   margin-bottom: 33px;
 }
 
-
-
 .subtitle{
   font-weight: 500;
   font-size: 25px;
@@ -47,7 +45,6 @@ section {
   text-transform: uppercase;
 }
 
-
 .container {
   max-width: 1266px;
   margin: 20px auto;
@@ -57,10 +54,48 @@ section {
 .menu{
   background-color: #e9e7e7;
   padding: 20px 10px;
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateY(-500px);
+  transition: all .5s;
+}
+
+.menu--active{
+  transform: translateY(0);
+  
+}
+
+.menu__btn{
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  width: 60px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  border-top: 8px solid #333333;
+  border-bottom: 8px solid #333333;
+  position: absolute;
+}
+
+.menu__btn::before{
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 8px;
+  left: 0;
+  top: 14px;
+  background-color: #333333;
 }
 
 .menu__list{
-  display: flex;
+  display: block;
   justify-content: space-around;
 }
 
@@ -68,6 +103,8 @@ section {
   border-bottom: 1px solid #e9e7e7;
   transition: all .5s;
   text-transform: uppercase;
+  padding: 10px;
+  display: block;
 }
 
 .menu__list a:hover{
@@ -77,6 +114,7 @@ section {
 .my-cv {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .aside{
@@ -92,7 +130,6 @@ section {
   height: 182px;
   margin: 64px auto;
   border-radius: 50%;
-  
 }
 
 .contacts{
@@ -124,10 +161,6 @@ section {
   padding-left: 10px;
   margin: 0 auto;
   padding-right: 10px;
-}
-
-.main-page li::before{
-  content: '-';
 }
 
 .title{
@@ -180,6 +213,10 @@ section {
 .media__roll{
   display: none;
 }
+
+
+
+
 
 
 @media (max-width: 1266px) {
@@ -243,6 +280,23 @@ section {
   .main-page li::before {
     content: '';
   }
+
+  .menu__btn{
+    top: 30px;
+    right: 30px;
+    width: 45px;
+    height: 35px;
+    border-top: 6px solid #333333;
+    border-bottom: 6px solid #333333;
+  }
+  
+  .menu__btn::before{
+    width: 45px;
+    height: 6px;
+    left: 0;
+    top: 9px;
+    background-color: #333333;
+  }
 }
 
 @media (max-width: 920px) {
@@ -252,6 +306,23 @@ section {
 
   .contacts{
     padding-bottom: 30px;
+  }
+
+  .menu__btn{
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 30px;
+    border-top: 6px solid #333333;
+    border-bottom: 6px solid #333333;
+  }
+  
+  .menu__btn::before{
+    width: 40px;
+    height: 6px;
+    left: 0;
+    top: 6px;
+    background-color: #333333;
   }
 }
 
